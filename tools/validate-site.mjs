@@ -111,6 +111,14 @@ includes("marketing.html", "Data Not Collected");
 includes("android/marketing.html", "Data Safety Draft");
 includes("android/marketing.html", "Contains ads:</strong> No.");
 
+// The two builds ship different level packs, so neither listing may borrow the other's copy.
+includes("marketing.html", "<strong>Level pack:</strong>");
+includes("android/marketing.html", "<strong>Level pack:</strong>");
+excludes("marketing.html", "animal");
+includes("android/marketing.html", "animal and nature pictures");
+includes("README.md", "Level packs differ by platform");
+includes("README.md", "Firebase");
+
 includes("support/index.html", "Mosaic Loop Support");
 includes("support/index.html", "https://github.com/VelvetRogue5/mosaicloop-site/issues");
 

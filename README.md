@@ -58,9 +58,25 @@ The pages describe the app as reviewed on August 19, 2026:
 | Android permissions | `VIBRATE` only |
 | Android backup | `android:allowBackup="true"`, so the local save can appear in the user's own Google backup |
 | No purchases | No StoreKit and no Play Billing in the current build |
+| Levels ship inside the app | 30 level files in the app bundle / APK assets; nothing is fetched at runtime |
 
 Store declarations that match these pages: App Store **Data Not Collected**; Google Play Data safety
 **no data collected, no data shared**.
+
+## Level packs differ by platform
+
+As of August 19, 2026 the two builds ship **different levels**, which is why the store copy is not shared:
+
+- **Android** (`mosaicloop_android/app/src/main/assets/levels/`): a 12x2 two-color tutorial plus 29 animal and
+  nature pictures (Whale, Koi Fish, Butterfly, Black Cat, Puppy, Fox, Panda, Peacock, Dragon, Unicorn, Seahorse,
+  Parrot, Penguin, Elephant, Forest Deer, Jellyfish, Dragonfly, Owl, Tiger Cub, Cactus Bloom, Koi Pair, Moon
+  Rabbit, Phoenix, Turtle Reef, Honey Bee, Peacock Fan, Rose, Snowman, Smiling Planet), boards growing 20x22 to
+  26x28. Cells outside the picture render as recessed pegboard holes.
+- **iOS** (`Data/resources.assets` in the Unity export): the original abstract mosaic pack, varied grid sizes
+  (27x30, 29x29, 35x22, 38x23, 32x32 and so on).
+
+If the picture pack is ported to iOS, rewrite `marketing.html` to match `android/marketing.html` and update the
+Current Features section of `terms-of-use.html`.
 
 Public privacy and support email: `velvet_rogue_5@proton.me`.
 
@@ -68,7 +84,9 @@ Bundle id / application id on both platforms: `ai.mosaicloop.game`.
 
 Update the policies, the terms, the marketing copy, and the store declarations **before release** if the app
 adds cloud saves, accounts, analytics, crash reporting, advertising (including wiring up the "continue"
-button), attribution, remote configuration, or any other data collection. The validator only checks that the
+button), attribution, remote configuration, **levels served from Firebase or any other remote host**, or any
+other data collection. Serving levels remotely is the one already on the roadmap: it would add network access,
+so both privacy policies and both store declarations must be revised before that ships. The validator only checks that the
 pages are internally consistent; it cannot tell you the app changed.
 
 ## Local validation

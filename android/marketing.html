@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Google Play marketing copy, Data safety draft, and Android submission notes for Mosaic Loop.">
+  <meta name="theme-color" content="#3b2077">
+  <title>Android Marketing Copy | Mosaic Loop</title>
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav" aria-label="Page navigation">
+      <a class="brand" href="../index.html" aria-label="Mosaic Loop home">
+        <img src="../assets/app-icon.png" alt="" width="44" height="44">
+        <span>Mosaic Loop</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="../support/">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Google Play · Android</p>
+        <h1>Mosaic Loop Marketing Copy</h1>
+        <p class="lead">Google Play listing copy, Data safety draft, and submission notes prepared from the current Mosaic Loop Android build.</p>
+        <p class="updated">Updated: August 19, 2026</p>
+        <div class="platform-switcher" aria-label="Choose a platform">
+          <span>Platform</span>
+          <a href="../marketing.html">iOS</a>
+          <a href="marketing.html" aria-current="page">Android</a>
+        </div>
+        <nav class="document-nav" aria-label="Android documents">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+          <a href="marketing.html" aria-current="page">Marketing Copy</a>
+        </nav>
+      </div>
+      <aside class="hero-badge" aria-label="Marketing summary">
+        <img src="../assets/app-icon.png" alt="Mosaic Loop app icon" width="136" height="136">
+        <div>
+          <strong>Prepared for Play Console</strong>
+          <span>App name, short and full description, review notes, Data safety draft, and legal links.</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="summary-grid" aria-label="Google Play listing summary">
+      <article>
+        <span class="card-number" aria-hidden="true">01</span>
+        <h2>App Name</h2>
+        <p>Mosaic Loop</p>
+      </article>
+      <article>
+        <span class="card-number" aria-hidden="true">02</span>
+        <h2>Category</h2>
+        <p>Games · Puzzle</p>
+      </article>
+      <article>
+        <span class="card-number" aria-hidden="true">03</span>
+        <h2>Monetization</h2>
+        <p>No in-app advertising and no in-app purchases in the current build.</p>
+      </article>
+    </section>
+
+    <section class="policy" aria-label="Google Play copy">
+      <article class="policy-section">
+        <h2>App Name</h2>
+        <pre id="app-name" class="copy-block">Mosaic Loop</pre>
+        <p class="copy-note">11 / 30 characters.</p>
+      </article>
+
+      <article class="policy-section">
+        <h2>Short Description</h2>
+        <pre id="short-description" class="copy-block">Sort colored gems around the loop and clear 30 handcrafted mosaics.</pre>
+        <p class="copy-note">67 / 80 characters.</p>
+      </article>
+
+      <article class="policy-section">
+        <h2>Full Description</h2>
+        <pre id="full-description" class="copy-block">Every mosaic starts as a jumble of colored gems. Your job is to take it apart in the right order.
+
+Mosaic Loop is a calm, handcrafted sorting puzzle. Tap a group of matching gems and they slide onto the loop that circles the board. Clear a full color and it leaves for good. Fill the loop with mismatched leftovers and you run out of room.
+
+Thirty levels, each a different mosaic pattern, each solvable if you read the board before you tap. Pinch to zoom in on a crowded corner, pan to find the color you need, and watch the board refill as space opens up.
+
+Features:
+- 30 handcrafted mosaic levels
+- One-tap gem sorting, no timers, no pressure
+- A conveyor loop with a capacity meter that warns you before it fills
+- Pinch-zoom and pan for larger boards
+- A gentle tutorial on level one
+- Restart a level instantly if you reach a dead end
+- Music, sound, and vibration switches
+- Plays entirely offline: the app has no internet permission
+- No account required
+- No ads, no analytics, no tracking
+- Progress stored on your device
+
+Read the pattern, pick your order, and clear the loop.</pre>
+        <p class="copy-note">1,086 / 4,000 characters.</p>
+      </article>
+
+      <article class="policy-section">
+        <h2>Google Play Review Notes Draft</h2>
+        <ul class="policy-list">
+          <li><strong>Account required:</strong> No.</li>
+          <li><strong>In-app purchases:</strong> None; Google Play Billing is not integrated.</li>
+          <li><strong>User-generated content:</strong> No.</li>
+          <li><strong>Player communication:</strong> No.</li>
+          <li><strong>Contains ads:</strong> No.</li>
+          <li><strong>Permissions:</strong> <code>android.permission.VIBRATE</code> only; no internet permission.</li>
+          <li><strong>Target API:</strong> 35, minimum 26.</li>
+          <li><strong>Note for reviewers:</strong> The continue button with a video icon in the dead-end dialog is interface only in this build and is not connected to any ad network.</li>
+        </ul>
+      </article>
+
+      <article class="policy-section">
+        <h2>Data Safety Draft</h2>
+        <p>
+          Declare <strong>no data collected</strong> and <strong>no data shared</strong>. The app bundles no analytics,
+          advertising, attribution, purchase, or tracking library, does not access the Android Advertising ID, and does
+          not declare the internet permission, so it cannot transmit anything. Level progress and settings stay in the
+          app's private storage.
+        </p>
+        <p>
+          Answer <strong>yes</strong> to &ldquo;users can request data deletion&rdquo; by pointing to the local option:
+          clearing the app's data or uninstalling removes everything. Note that the app allows Android Backup, so the
+          local save may appear in the user's own Google account backup. Confirm every Data safety answer against the
+          exact production app bundle before submission.
+        </p>
+      </article>
+
+      <article class="policy-section">
+        <h2>Legal and Support Links</h2>
+        <ul class="policy-list">
+          <li><a href="privacy.html">Android Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Android Terms of Use</a></li>
+          <li><a href="../support/">Mosaic Loop Support Page</a></li>
+          <li>Support email for Play Console: <a href="mailto:velvet_rogue_5@proton.me">velvet_rogue_5@proton.me</a></li>
+          <li><a href="../marketing.html">iOS Marketing Copy</a></li>
+        </ul>
+      </article>
+
+      <article class="policy-section">
+        <h2>Submission Reminder</h2>
+        <p>
+          Recheck this copy, the content rating questionnaire, the target audience declaration, and every Data safety
+          answer against the exact production app bundle before publishing. Update the legal pages first if the
+          production build adds accounts, cloud saves, advertising, analytics, or any other data service.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Mosaic Loop. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Legal documents">
+      <a href="../privacy.html">iOS Privacy</a>
+      <a href="../terms-of-use.html">iOS Terms</a>
+      <a href="../marketing.html">iOS Marketing</a>
+      <a href="privacy.html">Android Privacy</a>
+      <a href="terms-of-use.html">Android Terms</a>
+      <a href="marketing.html">Android Marketing</a>
+    </nav>
+  </footer>
+</body>
+</html>

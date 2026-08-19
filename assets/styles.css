@@ -559,3 +559,24 @@ code {
   font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-size: 0.9em;
 }
+
+.copy-block {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 14px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  padding: 18px;
+  color: var(--ink);
+  font: inherit;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.copy-note {
+  margin-top: 8px;
+  color: #7c72a0;
+  font-size: 0.9rem;
+}

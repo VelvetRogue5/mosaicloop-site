@@ -5,9 +5,14 @@ App Store Connect and Google Play Console submission.
 
 ## Pages
 
-- `index.html`: landing page linking to both policies.
+- `index.html`: landing page linking to every document.
 - `privacy.html`: iOS privacy policy (App Store Connect privacy policy URL).
+- `terms-of-use.html`: iOS terms of use.
+- `marketing.html`: App Store listing copy and submission notes.
 - `android/privacy.html`: Android privacy policy (Google Play Console privacy policy URL).
+- `android/terms-of-use.html`: Android terms of use.
+- `android/marketing.html`: Google Play listing copy, Data safety draft, and submission notes.
+- `support/index.html`: support page for both platforms (App Store Connect / Play Console support URL).
 
 ## GitHub Pages
 
@@ -15,10 +20,26 @@ In repository settings, enable GitHub Pages using `Deploy from a branch`, branch
 
 - Home: `https://velvetrogue5.github.io/mosaicloop-site/`
 - iOS privacy: `https://velvetrogue5.github.io/mosaicloop-site/privacy.html`
+- iOS terms: `https://velvetrogue5.github.io/mosaicloop-site/terms-of-use.html`
+- iOS marketing: `https://velvetrogue5.github.io/mosaicloop-site/marketing.html`
 - Android privacy: `https://velvetrogue5.github.io/mosaicloop-site/android/privacy.html`
+- Android terms: `https://velvetrogue5.github.io/mosaicloop-site/android/terms-of-use.html`
+- Android marketing: `https://velvetrogue5.github.io/mosaicloop-site/android/marketing.html`
+- Support: `https://velvetrogue5.github.io/mosaicloop-site/support/`
 
-Paste the iOS URL into App Store Connect → App Privacy → Privacy Policy URL, and the Android URL into
-Play Console → App content → Privacy policy.
+Where each URL goes:
+
+| Field | URL |
+| --- | --- |
+| App Store Connect → App Privacy → Privacy Policy URL | `/privacy.html` |
+| App Store Connect → App Information → Support URL | `/support/` |
+| App Store Connect → App Information → Marketing URL (optional) | `/` |
+| App Store Connect → License Agreement (if not using Apple's EULA) | `/terms-of-use.html` |
+| Play Console → App content → Privacy policy | `/android/privacy.html` |
+| Play Console → Store listing → Website | `/` |
+
+The `marketing.html` and `android/marketing.html` pages are working documents for filling in the listing
+forms, not pages the stores link to. Character counts next to each block are checked by the validator.
 
 ## Current privacy posture
 
@@ -43,9 +64,12 @@ Store declarations that match these pages: App Store **Data Not Collected**; Goo
 
 Public privacy and support email: `velvet_rogue_5@proton.me`.
 
-Update the policies and the store declarations **before release** if the app adds cloud saves, accounts,
-analytics, crash reporting, advertising (including wiring up the "continue" button), attribution, remote
-configuration, or any other data collection.
+Bundle id / application id on both platforms: `ai.mosaicloop.game`.
+
+Update the policies, the terms, the marketing copy, and the store declarations **before release** if the app
+adds cloud saves, accounts, analytics, crash reporting, advertising (including wiring up the "continue"
+button), attribution, remote configuration, or any other data collection. The validator only checks that the
+pages are internally consistent; it cannot tell you the app changed.
 
 ## Local validation
 
